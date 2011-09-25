@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-                font-family: "Georgia";
-                font-size: 100%;
-            }
-            .answer {
-                color: white;
-            }
-            table {
-                font-size: 1.3em;
-                width: 100%;
-            }
-            tr {
-                line-height: 2;
-            }
-            tr:hover .answer {
-                color: inherit;
-            }
-            td.compound {
-                border-bottom: 1px solid black;
-                color: black;
-                font-size: 1.7em;
-                line-height: 1;
-                width: 7em;
-            }
-            td.reading {
-                border-bottom: 1px solid black;
-                color: #aaaaaa;
-                width: 10em;
-            }
-            @media print {
-                .answer {
-                    display: none;
-                }
-            }
-        </style>
+  <head>
+    <style>
+      body {
+        font-family: "Georgia";
+        font-size: 100%;
+      }
+      .answer {
+        color: white;
+      }
+      table {
+        font-size: 1.3em;
+        width: 100%;
+      }
+      tr {
+        line-height: 2;
+      }
+      tr:hover .answer {
+        color: inherit;
+      }
+      td.compound {
+        border-bottom: 1px solid black;
+        color: black;
+        font-size: 1.7em;
+        line-height: 1;
+        width: 7em;
+      }
+      td.reading {
+        border-bottom: 1px solid black;
+        color: #aaaaaa;
+        width: 10em;
+      }
+      @media print {
+        .answer {
+          display: none;
+        }
+      }
+    </style>
 
-    </head>
-    <body>
-        <table>
-            {{#compounds}}
-                <tr>
-                    <td>{{meaning}}</td>
-                    <td class="compound"><span class="answer">{{kanji}}</span></td>
-                    <td class="reading"><span class="answer">{{reading}}</span></td>
-                </tr>
-            {{/compounds}}
-        </table>
-    </body>
+  </head>
+  <body>
+    <table>
+      {{#compounds}}
+      <tr>
+        <td>{{meaning}}</td>
+        <td class="compound"><span class="answer">{{kanji}}</span></td>
+        <td class="reading"><span class="answer">{{reading}}</span></td>
+      </tr>
+      {{/compounds}}
+    </table>
+  </body>
 </html>
