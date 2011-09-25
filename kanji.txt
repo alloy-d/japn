@@ -40,7 +40,7 @@
 大きい  おおきい    big
 小さい  ちいさい    small
 古い    ふるい      old
-時      じ,とき     time
+時      じ,とき     (time)
 
 二十    はたち      twenty years of age
 行く    いく        go
@@ -51,8 +51,8 @@
 子      こ          child
 曜      よう        day of the week
 日曜日  にちようび  Sunday
-火      か          fire
-火曜日　かようび    Tuesday
+火      か          (fire)
+火曜日  かようび    Tuesday
 土      ど          earth, soil
 土曜日  どようび    Saturday
 木      もく        tree, wood
@@ -103,7 +103,7 @@
 大人    おとな      adult
 間      あいだ      interval, space between
 時間    じかん      time
-一時間　いちじかん  one hour
+一時間  いちじかん  one hour
 週      しゅう      week
 来週    らいしゅう  next week
 毎週    まいしゅう  every week
@@ -130,7 +130,7 @@
 思う    おもう      think
 駅      えき        station
 駅前    えきまえ    area in front of the station
-名      な          name
+名      な          (name)
 名前    なまえ      name
 朝      あさ        morning
 毎朝    まいあさ    every morning
@@ -155,7 +155,7 @@
 東      とう        east
 京      きょう      capital
 東京    とうきょう  Tokyo
-校      こう        school
+校      こう        (school)
 学校    がっこう    school
 高い    たかい      expensive, high
 高校    こうこう    high school
