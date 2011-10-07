@@ -2,3 +2,4 @@ syntax: glob
 .redo/*
 6.out
 **.6
+reader/reader
