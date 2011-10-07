@@ -2,7 +2,9 @@ package main
 
 import (
 	"bufio"
+	"flag"
 	"fmt"
+	"json"
 	"log"
 	"os"
 	"regexp"
@@ -11,15 +13,22 @@ import (
 )
 
 type Compound struct {
-	kanji   string
-	reading string
-	meaning string
+	Kanji   string	`json:"kanji"`
+	Reading string	`json:"reading"`
+	Meaning string	`json:"meaning"`
 }
+
+var html *bool = flag.Bool("html", false, "Output HTML")
 
 func main() {
 	compounds := make(map[string]Compound)
+	flag.Parse()
 
-	list, err := os.Open("kanji.txt")
+	if flag.NArg() < 1 {
+		log.Fatal("Need a file to open!")
+	}
+
+	list, err := os.Open(flag.Arg(0))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -45,11 +54,11 @@ func main() {
 			strings.TrimSpace(parts[1]),
 			strings.TrimSpace(parts[2])}
 
-		_, exists := compounds[compound.meaning]
+		_, exists := compounds[compound.Meaning]
 		if exists {
-			log.Printf("Duplicate meaning: %v", compound.meaning)
+			log.Printf("Duplicate meaning: %v", compound.Meaning)
 		}
-		compounds[compound.meaning] = compound
+		compounds[compound.Meaning] = compound
 	}
 
 	array := make([]Compound, len(compounds))
@@ -59,7 +68,12 @@ func main() {
 		i += 1
 	}
 
-	out := mustache.RenderFile("list.mustache",
-		map[string][]Compound{"compounds": array})
+	var out string
+	if *html {
+		out = mustache.RenderFile("list.mustache", map[string][]Compound{"compounds": array})
+	} else {
+		json_list, _ := json.MarshalIndent(array, "", "  ")
+		out = string(json_list)
+	}
 	fmt.Print(out)
 }
