@@ -244,5 +244,12 @@ module Japanese
       end
     end
   end
+
+  class SpecialPoliteVerb < GodanVerb
+    def stem
+      prefix, ending = split
+      prefix + "い"
+    end
+  end
 end
 
