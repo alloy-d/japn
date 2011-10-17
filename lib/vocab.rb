@@ -48,7 +48,7 @@ module Japanese
     end
 
     def na_nominal(dictionary, meaning)
-      @list[Nominal.new(dictionary, modifier: "な")] = meaning
+      @list[Nominal.new(dictionary, "な")] = meaning
     end
 
     def irregular(dictionary, meaning)
@@ -76,9 +76,9 @@ module Japanese
   end
 
   class Nominal < Word
-    def initialize(dictionary, opts)
+    def initialize(dictionary, modifier="の")
       super(dictionary)
-      @modifier = opts[:modifier] || "の"
+      @modifier = modifier
     end
 
     def self.negative(nominal)
