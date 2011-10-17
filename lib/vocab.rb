@@ -23,7 +23,7 @@ module Japanese
     include Enumerable
 
     def initialize &block
-      @list = Array.new
+      @list = Hash.new
       instance_eval(&block)
     end
 
@@ -31,24 +31,36 @@ module Japanese
       @list.each {|w| yield w }
     end
 
-    def ichidan(dictionary)
-      @list << IchidanVerb.new(dictionary)
+    def ichidan(dictionary, meaning)
+      @list[IchidanVerb.new(dictionary)] = meaning
     end
 
-    def godan(dictionary)
-      @list << GodanVerb.new(dictionary)
+    def godan(dictionary, meaning)
+      @list[GodanVerb.new(dictionary)] = meaning
     end
 
-    def adjectival(dictionary)
-      @list << Adjectival.new(dictionary)
+    def adjectival(dictionary, meaning)
+      @list[Adjectival.new(dictionary)] = meaning
     end
 
-    def nominal(dictionary)
-      @list << Nominal.new(dictionary)
+    def nominal(dictionary, meaning)
+      @list[Nominal.new(dictionary)] = meaning
     end
 
-    def na_nominal(dictionary)
-      @list << Nominal.new(dictionary, modifier: "な")
+    def na_nominal(dictionary, meaning)
+      @list[Nominal.new(dictionary, modifier: "な")] = meaning
+    end
+
+    def irregular(dictionary, meaning)
+      @list[IrregularVerb.new(dictionary)] = meaning
+    end
+
+    def special_polite(dictionary, meaning)
+      @list[SpecialPoliteVerb.new(dictionary)] = meaning
+    end
+
+    def counter(dictionary, meaning)
+      @list[Counter.new(dictionary)] = meaning
     end
   end
 
@@ -230,6 +242,14 @@ module Japanese
             imperfective: "しない",
           },
         })
+      when "行く"
+        @conjugation.direct.merge!({
+          perfective: "いった",
+          gerund: "いって",
+          negative: {
+            imperfective: "いかない",
+          },
+        })
       end
 
       direct.negative.perfective = Adjectival::perfective(direct.negative.imperfective)
@@ -241,6 +261,8 @@ module Japanese
         "き"
       when "する"
         "し"
+      when "行く"
+        "いき"
       end
     end
   end
@@ -250,6 +272,9 @@ module Japanese
       prefix, ending = split
       prefix + "い"
     end
+  end
+
+  class Counter < Word
   end
 end
 
