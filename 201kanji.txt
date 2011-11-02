@@ -58,3 +58,51 @@
 天        てん          (sky)
 天気      てんき        weather
 天ぷら    てんぷら      fried food
+
+声        こえ          voice
+雪        ゆき          snow
+存じる    ぞんじる      know; think
+ご存知    ごぞんじ      know (honorific)
+申す      もうす        say (humble)
+国        くに          country
+外国      がいこく      foreign country
+中国      ちゅうごく    China
+米        こめ          uncooked rice
+米国      べいこく      U.S.A.
+冷たい    つめたい      cold
+願う      ねがう        request
+酒        さけ          rice wine
+酒屋      さかや        liquor store
+号        ごう          number
+号室      ごうしつ      classifier for room numbers
+過ぎる    すぎる        exceed, go beyond
+-過ぎ     -すぎ         past
+全        ぜん          (entire)
+全国      ぜんこく      the entire country
+全部      ぜんぶ        all, the whole thing
+
+番        ばん          number (in a series); classifier for numbers
+一番      いちばん      number one
+何番      なんばん      which number?
+電話番号  でんわばんごう  telephone number
+留守番    るすばん        caretaker
+-様       -さま           (polite suffix)
+お客様    おきゃくさま    guest
+料        りょう          (materials)
+理        り              (arrangement)
+料理      りょうり        cooking
+料理屋    りょうりや      restaurant
+長い      ながい          long
+部長      ぶちょう        division manager
+社長      しゃちょう      company president
+家        いえ,うち       house, home
+内        うち            inside, within
+家内      かない          one's own wife
+主        しゅ            (chief)
+主人      しゅじん        husband
+好き      すき            like
+花        はな            flower
+花屋      はなや          florist
+代わる    かわる          change, convert, substitute
+代える    かえる          change (something)
+
