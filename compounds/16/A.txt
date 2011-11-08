@@ -1,0 +1,28 @@
+大事      だいじ        important
+電気      でんき        electricity; light
+電気屋    でんきや      electric appliance shop; electrician
+和食      わしょく      Japanese-style food
+和英      わえい        Japanese-English (dictionary)
+英和      えいわ        English-Japanese (dictionary)
+和室      わしつ        Japanese-style room
+洋食      ようしょく    Western-style food
+堂        どう          (hall)
+食堂      しょくどう    dining room; restaurant
+入る      はいる        enter
+入れる    いれる        put in
+海        うみ          sea; ocean
+消える    きえる        become extinguished
+消す      けす          extinguish
+閉まる    しまる        become closed
+閉める    しめる        close
+置く      おく          place; put
+寒い      さむい        cold (atmospheric)
+暑い      あつい        hot
+物        もの          thing
+食べ物    たべもの      food
+飲み物    のみもの      drink, beverage
+買い物    かいもの      shopping (i.e., thing bought)
+早い      はやい        early
+開く      あく          become open
+開ける    あける        open
+帰る      かえる        return
