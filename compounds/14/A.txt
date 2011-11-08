@@ -1,0 +1,14 @@
+便利      べんり        convenient
+不便      ふべん        inconvenient
+漢字      かんじ        kanji
+教室      きょうしつ    classroom
+図書室    としょしつ    library room
+君        きみ          you (familiar, male)
+－君      くん          familiar male suffix
+本当      ほんとう      truth
+頼む      たのむ        order, request
+昼        ひる          noon, midday
+飯        はん          meal
+少し      すこし        a little
+留守      るす          absence, being away from home
+

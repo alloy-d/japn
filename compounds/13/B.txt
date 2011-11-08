@@ -1,0 +1,15 @@
+地下      ちか          basement
+地図      ちず          map
+図書館    としょかん    library
+－階      かい          floor
+教える    おしえる      teach
+近い      ちかい        near
+読む      よむ          read
+新しい    あたらしい    new
+聞く      きく          listen, ask
+聞こえる  きこえる      hear
+飲む      のむ          drink, swallow
+右        みぎ          right
+左        ひだり        left
+歩く      あるく        walk
+

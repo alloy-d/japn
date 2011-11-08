@@ -1,0 +1,16 @@
+同じ      おなじ        same
+元気      げんき        health
+病気      びょうき      sickness
+病院      びょういん    hospital
+大学院    だいがくいん  graduate school
+去年      きょねん      last year
+色        いろ          color
+茶        ちゃ          tea
+茶色      ちゃいろ      brown
+京都      きょうと      Kyoto
+－才      さい          years of age
+寺        てら          temple
+天        てん          (sky)
+天気      てんき        weather
+天ぷら    てんぷら      fried food
+
