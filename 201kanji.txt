@@ -41,7 +41,7 @@
 昼        ひる          noon, midday
 飯        はん          meal
 少し      すこし        a little
-留守      るす          caretaker
+留守      るす          absence, being away from home
 
 同じ      おなじ        same
 元気      げんき        health
