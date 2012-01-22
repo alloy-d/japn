@@ -1,1 +1,2198 @@
-open list.mustache: no such file or directory
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <style>
+      body {
+        font-family: "Georgia";
+        font-size: 100%;
+      }
+      .answer {
+        color: white;
+      }
+      table {
+        font-size: 1.3em;
+        width: 100%;
+      }
+      tr {
+        line-height: 2;
+      }
+      tr:hover .answer {
+        color: inherit;
+      }
+      td.compound {
+        border-bottom: 1px solid black;
+        color: black;
+        font-size: 1.7em;
+        line-height: 1;
+        width: 7em;
+      }
+      td.reading {
+        border-bottom: 1px solid black;
+        color: #aaaaaa;
+        width: 10em;
+      }
+      @media print {
+        .answer {
+          display: none;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <table cellspacing="8">
+            <tr>
+        <td>six things</td>
+        <td class="compound"><span class="answer">六つ</span></td>
+        <td class="reading"><span class="answer">むっつ</span></td>
+      </tr>
+            <tr>
+        <td>China</td>
+        <td class="compound"><span class="answer">中国</span></td>
+        <td class="reading"><span class="answer">ちゅうごく</span></td>
+      </tr>
+            <tr>
+        <td>morning</td>
+        <td class="compound"><span class="answer">朝</span></td>
+        <td class="reading"><span class="answer">あさ</span></td>
+      </tr>
+            <tr>
+        <td>research personnel</td>
+        <td class="compound"><span class="answer">研究員</span></td>
+        <td class="reading"><span class="answer">けんきゅういん</span></td>
+      </tr>
+            <tr>
+        <td>this morning</td>
+        <td class="compound"><span class="answer">今朝</span></td>
+        <td class="reading"><span class="answer">けさ</span></td>
+      </tr>
+            <tr>
+        <td>(school)</td>
+        <td class="compound"><span class="answer">校</span></td>
+        <td class="reading"><span class="answer">こう</span></td>
+      </tr>
+            <tr>
+        <td>week</td>
+        <td class="compound"><span class="answer">週</span></td>
+        <td class="reading"><span class="answer">しゅう</span></td>
+      </tr>
+            <tr>
+        <td>cheap</td>
+        <td class="compound"><span class="answer">安い</span></td>
+        <td class="reading"><span class="answer">やすい</span></td>
+      </tr>
+            <tr>
+        <td>kanji</td>
+        <td class="compound"><span class="answer">漢字</span></td>
+        <td class="reading"><span class="answer">かんじ</span></td>
+      </tr>
+            <tr>
+        <td>English-Japanese (dictionary)</td>
+        <td class="compound"><span class="answer">英和</span></td>
+        <td class="reading"><span class="answer">えいわ</span></td>
+      </tr>
+            <tr>
+        <td>ten thousand</td>
+        <td class="compound"><span class="answer">万</span></td>
+        <td class="reading"><span class="answer">まん</span></td>
+      </tr>
+            <tr>
+        <td>one month</td>
+        <td class="compound"><span class="answer">一ヶ月</span></td>
+        <td class="reading"><span class="answer">いっかげつ</span></td>
+      </tr>
+            <tr>
+        <td>(time)</td>
+        <td class="compound"><span class="answer">時</span></td>
+        <td class="reading"><span class="answer">じ,とき</span></td>
+      </tr>
+            <tr>
+        <td>park</td>
+        <td class="compound"><span class="answer">公園</span></td>
+        <td class="reading"><span class="answer">こうえん</span></td>
+      </tr>
+            <tr>
+        <td>cold (atmospheric)</td>
+        <td class="compound"><span class="answer">寒い</span></td>
+        <td class="reading"><span class="answer">さむい</span></td>
+      </tr>
+            <tr>
+        <td>author</td>
+        <td class="compound"><span class="answer">作者</span></td>
+        <td class="reading"><span class="answer">さくしゃ</span></td>
+      </tr>
+            <tr>
+        <td>research report</td>
+        <td class="compound"><span class="answer">研究レポート</span></td>
+        <td class="reading"><span class="answer">けんきゅうレポート</span></td>
+      </tr>
+            <tr>
+        <td>enter</td>
+        <td class="compound"><span class="answer">入る</span></td>
+        <td class="reading"><span class="answer">はいる</span></td>
+      </tr>
+            <tr>
+        <td>arrive</td>
+        <td class="compound"><span class="answer">着く</span></td>
+        <td class="reading"><span class="answer">つく</span></td>
+      </tr>
+            <tr>
+        <td>brown</td>
+        <td class="compound"><span class="answer">茶色</span></td>
+        <td class="reading"><span class="answer">ちゃいろ</span></td>
+      </tr>
+            <tr>
+        <td>eye</td>
+        <td class="compound"><span class="answer">目</span></td>
+        <td class="reading"><span class="answer">め</span></td>
+      </tr>
+            <tr>
+        <td>bookstore</td>
+        <td class="compound"><span class="answer">本屋</span></td>
+        <td class="reading"><span class="answer">ほんや</span></td>
+      </tr>
+            <tr>
+        <td>borrow</td>
+        <td class="compound"><span class="answer">借りる</span></td>
+        <td class="reading"><span class="answer">かりる</span></td>
+      </tr>
+            <tr>
+        <td>listen, ask</td>
+        <td class="compound"><span class="answer">聞く</span></td>
+        <td class="reading"><span class="answer">きく</span></td>
+      </tr>
+            <tr>
+        <td>institute director</td>
+        <td class="compound"><span class="answer">所長</span></td>
+        <td class="reading"><span class="answer">しょちょう</span></td>
+      </tr>
+            <tr>
+        <td>appear; be visible</td>
+        <td class="compound"><span class="answer">見える</span></td>
+        <td class="reading"><span class="answer">みえる</span></td>
+      </tr>
+            <tr>
+        <td>weather</td>
+        <td class="compound"><span class="answer">天気</span></td>
+        <td class="reading"><span class="answer">てんき</span></td>
+      </tr>
+            <tr>
+        <td>go into the office of a company</td>
+        <td class="compound"><span class="answer">出社する</span></td>
+        <td class="reading"><span class="answer">しゅっしゃする</span></td>
+      </tr>
+            <tr>
+        <td>laboratory; professor&apos;s office</td>
+        <td class="compound"><span class="answer">研究室</span></td>
+        <td class="reading"><span class="answer">けんきゅうしつ</span></td>
+      </tr>
+            <tr>
+        <td>what?</td>
+        <td class="compound"><span class="answer">何</span></td>
+        <td class="reading"><span class="answer">なに</span></td>
+      </tr>
+            <tr>
+        <td>nine</td>
+        <td class="compound"><span class="answer">九</span></td>
+        <td class="reading"><span class="answer">きゅう</span></td>
+      </tr>
+            <tr>
+        <td>language</td>
+        <td class="compound"><span class="answer">－語</span></td>
+        <td class="reading"><span class="answer">ご</span></td>
+      </tr>
+            <tr>
+        <td>guest</td>
+        <td class="compound"><span class="answer">お客様</span></td>
+        <td class="reading"><span class="answer">おきゃくさま</span></td>
+      </tr>
+            <tr>
+        <td>back, rear</td>
+        <td class="compound"><span class="answer">後ろ</span></td>
+        <td class="reading"><span class="answer">うしろ</span></td>
+      </tr>
+            <tr>
+        <td>truth</td>
+        <td class="compound"><span class="answer">本当</span></td>
+        <td class="reading"><span class="answer">ほんとう</span></td>
+      </tr>
+            <tr>
+        <td>decide</td>
+        <td class="compound"><span class="answer">決める</span></td>
+        <td class="reading"><span class="answer">きめる</span></td>
+      </tr>
+            <tr>
+        <td>attend; go out, leave; answer (a phone)</td>
+        <td class="compound"><span class="answer">出る</span></td>
+        <td class="reading"><span class="answer">でる</span></td>
+      </tr>
+            <tr>
+        <td>raise; give</td>
+        <td class="compound"><span class="answer">上げる</span></td>
+        <td class="reading"><span class="answer">あげる</span></td>
+      </tr>
+            <tr>
+        <td>cooking</td>
+        <td class="compound"><span class="answer">料理</span></td>
+        <td class="reading"><span class="answer">りょうり</span></td>
+      </tr>
+            <tr>
+        <td>next month</td>
+        <td class="compound"><span class="answer">来月</span></td>
+        <td class="reading"><span class="answer">らいげつ</span></td>
+      </tr>
+            <tr>
+        <td>older brother</td>
+        <td class="compound"><span class="answer">兄</span></td>
+        <td class="reading"><span class="answer">あに</span></td>
+      </tr>
+            <tr>
+        <td>travel</td>
+        <td class="compound"><span class="answer">旅</span></td>
+        <td class="reading"><span class="answer">たび</span></td>
+      </tr>
+            <tr>
+        <td>a talk</td>
+        <td class="compound"><span class="answer">話</span></td>
+        <td class="reading"><span class="answer">はなし</span></td>
+      </tr>
+            <tr>
+        <td>two</td>
+        <td class="compound"><span class="answer">二</span></td>
+        <td class="reading"><span class="answer">に</span></td>
+      </tr>
+            <tr>
+        <td>English</td>
+        <td class="compound"><span class="answer">英語</span></td>
+        <td class="reading"><span class="answer">えいご</span></td>
+      </tr>
+            <tr>
+        <td>(teacher)</td>
+        <td class="compound"><span class="answer">師</span></td>
+        <td class="reading"><span class="answer">し</span></td>
+      </tr>
+            <tr>
+        <td>number one</td>
+        <td class="compound"><span class="answer">一番</span></td>
+        <td class="reading"><span class="answer">いちばん</span></td>
+      </tr>
+            <tr>
+        <td>a little</td>
+        <td class="compound"><span class="answer">少し</span></td>
+        <td class="reading"><span class="answer">すこし</span></td>
+      </tr>
+            <tr>
+        <td>this week</td>
+        <td class="compound"><span class="answer">今週</span></td>
+        <td class="reading"><span class="answer">こんしゅう</span></td>
+      </tr>
+            <tr>
+        <td>eat</td>
+        <td class="compound"><span class="answer">食べる</span></td>
+        <td class="reading"><span class="answer">たべる</span></td>
+      </tr>
+            <tr>
+        <td>bank employee</td>
+        <td class="compound"><span class="answer">銀行員</span></td>
+        <td class="reading"><span class="answer">ぎんこういん</span></td>
+      </tr>
+            <tr>
+        <td>every week</td>
+        <td class="compound"><span class="answer">毎週</span></td>
+        <td class="reading"><span class="answer">まいしゅう</span></td>
+      </tr>
+            <tr>
+        <td>this month</td>
+        <td class="compound"><span class="answer">今月</span></td>
+        <td class="reading"><span class="answer">こんげつ</span></td>
+      </tr>
+            <tr>
+        <td>U.S.A.</td>
+        <td class="compound"><span class="answer">米国</span></td>
+        <td class="reading"><span class="answer">べいこく</span></td>
+      </tr>
+            <tr>
+        <td>in the midst of</td>
+        <td class="compound"><span class="answer">－中</span></td>
+        <td class="reading"><span class="answer">ちゅう</span></td>
+      </tr>
+            <tr>
+        <td>Tuesday</td>
+        <td class="compound"><span class="answer">火曜日</span></td>
+        <td class="reading"><span class="answer">かようび</span></td>
+      </tr>
+            <tr>
+        <td>silver</td>
+        <td class="compound"><span class="answer">銀</span></td>
+        <td class="reading"><span class="answer">ぎん</span></td>
+      </tr>
+            <tr>
+        <td>academic scholar</td>
+        <td class="compound"><span class="answer">学者</span></td>
+        <td class="reading"><span class="answer">がくしゃ</span></td>
+      </tr>
+            <tr>
+        <td>low-ranking company employee</td>
+        <td class="compound"><span class="answer">社員</span></td>
+        <td class="reading"><span class="answer">しゃいん</span></td>
+      </tr>
+            <tr>
+        <td>treat yourself carefully; take care</td>
+        <td class="compound"><span class="answer">お大事に</span></td>
+        <td class="reading"><span class="answer">おだいじに</span></td>
+      </tr>
+            <tr>
+        <td>half</td>
+        <td class="compound"><span class="answer">半</span></td>
+        <td class="reading"><span class="answer">はん</span></td>
+      </tr>
+            <tr>
+        <td>meal</td>
+        <td class="compound"><span class="answer">飯</span></td>
+        <td class="reading"><span class="answer">はん</span></td>
+      </tr>
+            <tr>
+        <td>blood mother</td>
+        <td class="compound"><span class="answer">実の母</span></td>
+        <td class="reading"><span class="answer">じつのはは</span></td>
+      </tr>
+            <tr>
+        <td>foreigner</td>
+        <td class="compound"><span class="answer">外人</span></td>
+        <td class="reading"><span class="answer">がいじん</span></td>
+      </tr>
+            <tr>
+        <td>(fire)</td>
+        <td class="compound"><span class="answer">火</span></td>
+        <td class="reading"><span class="answer">か</span></td>
+      </tr>
+            <tr>
+        <td>assembly hall, clubhouse</td>
+        <td class="compound"><span class="answer">会館</span></td>
+        <td class="reading"><span class="answer">かいかん</span></td>
+      </tr>
+            <tr>
+        <td>I, me</td>
+        <td class="compound"><span class="answer">私</span></td>
+        <td class="reading"><span class="answer">わたし,わたくし</span></td>
+      </tr>
+            <tr>
+        <td>skillful</td>
+        <td class="compound"><span class="answer">上手</span></td>
+        <td class="reading"><span class="answer">じょうず</span></td>
+      </tr>
+            <tr>
+        <td>symbol</td>
+        <td class="compound"><span class="answer">字</span></td>
+        <td class="reading"><span class="answer">じ</span></td>
+      </tr>
+            <tr>
+        <td>weak</td>
+        <td class="compound"><span class="answer">弱い</span></td>
+        <td class="reading"><span class="answer">よわい</span></td>
+      </tr>
+            <tr>
+        <td>temple</td>
+        <td class="compound"><span class="answer">寺</span></td>
+        <td class="reading"><span class="answer">てら</span></td>
+      </tr>
+            <tr>
+        <td>window</td>
+        <td class="compound"><span class="answer">窓</span></td>
+        <td class="reading"><span class="answer">まど</span></td>
+      </tr>
+            <tr>
+        <td>expensive, high</td>
+        <td class="compound"><span class="answer">高い</span></td>
+        <td class="reading"><span class="answer">たかい</span></td>
+      </tr>
+            <tr>
+        <td>teach</td>
+        <td class="compound"><span class="answer">教える</span></td>
+        <td class="reading"><span class="answer">おしえる</span></td>
+      </tr>
+            <tr>
+        <td>graduate school</td>
+        <td class="compound"><span class="answer">大学院</span></td>
+        <td class="reading"><span class="answer">だいがくいん</span></td>
+      </tr>
+            <tr>
+        <td>name</td>
+        <td class="compound"><span class="answer">名前</span></td>
+        <td class="reading"><span class="answer">なまえ</span></td>
+      </tr>
+            <tr>
+        <td>Monday</td>
+        <td class="compound"><span class="answer">月曜日</span></td>
+        <td class="reading"><span class="answer">げつようび</span></td>
+      </tr>
+            <tr>
+        <td>work</td>
+        <td class="compound"><span class="answer">仕事</span></td>
+        <td class="reading"><span class="answer">しごと</span></td>
+      </tr>
+            <tr>
+        <td>now</td>
+        <td class="compound"><span class="answer">今</span></td>
+        <td class="reading"><span class="answer">いま</span></td>
+      </tr>
+            <tr>
+        <td>noon, midday</td>
+        <td class="compound"><span class="answer">昼</span></td>
+        <td class="reading"><span class="answer">ひる</span></td>
+      </tr>
+            <tr>
+        <td>inconvenient</td>
+        <td class="compound"><span class="answer">不便</span></td>
+        <td class="reading"><span class="answer">ふべん</span></td>
+      </tr>
+            <tr>
+        <td>twentieth day of the month</td>
+        <td class="compound"><span class="answer">二十日</span></td>
+        <td class="reading"><span class="answer">はつか</span></td>
+      </tr>
+            <tr>
+        <td>younger brother</td>
+        <td class="compound"><span class="answer">弟</span></td>
+        <td class="reading"><span class="answer">おとうと</span></td>
+      </tr>
+            <tr>
+        <td>entrance</td>
+        <td class="compound"><span class="answer">入り口</span></td>
+        <td class="reading"><span class="answer">いりぐち</span></td>
+      </tr>
+            <tr>
+        <td>dealer, seller; business establishment</td>
+        <td class="compound"><span class="answer">屋</span></td>
+        <td class="reading"><span class="answer">や</span></td>
+      </tr>
+            <tr>
+        <td>tooth</td>
+        <td class="compound"><span class="answer">歯</span></td>
+        <td class="reading"><span class="answer">は</span></td>
+      </tr>
+            <tr>
+        <td>order, request</td>
+        <td class="compound"><span class="answer">頼む</span></td>
+        <td class="reading"><span class="answer">たのむ</span></td>
+      </tr>
+            <tr>
+        <td>seven</td>
+        <td class="compound"><span class="answer">七</span></td>
+        <td class="reading"><span class="answer">なな,しち</span></td>
+      </tr>
+            <tr>
+        <td>convenient</td>
+        <td class="compound"><span class="answer">便利</span></td>
+        <td class="reading"><span class="answer">べんり</span></td>
+      </tr>
+            <tr>
+        <td>clerk</td>
+        <td class="compound"><span class="answer">事務員</span></td>
+        <td class="reading"><span class="answer">じむいん</span></td>
+      </tr>
+            <tr>
+        <td>Japanese-English (dictionary)</td>
+        <td class="compound"><span class="answer">和英</span></td>
+        <td class="reading"><span class="answer">わえい</span></td>
+      </tr>
+            <tr>
+        <td>tonight</td>
+        <td class="compound"><span class="answer">今晩</span></td>
+        <td class="reading"><span class="answer">こんばん</span></td>
+      </tr>
+            <tr>
+        <td>other, another</td>
+        <td class="compound"><span class="answer">外</span></td>
+        <td class="reading"><span class="answer">ほか</span></td>
+      </tr>
+            <tr>
+        <td>time</td>
+        <td class="compound"><span class="answer">時間</span></td>
+        <td class="reading"><span class="answer">じかん</span></td>
+      </tr>
+            <tr>
+        <td>tree, wood</td>
+        <td class="compound"><span class="answer">木</span></td>
+        <td class="reading"><span class="answer">もく</span></td>
+      </tr>
+            <tr>
+        <td>bank</td>
+        <td class="compound"><span class="answer">銀行</span></td>
+        <td class="reading"><span class="answer">ぎんこう</span></td>
+      </tr>
+            <tr>
+        <td>remember</td>
+        <td class="compound"><span class="answer">覚える</span></td>
+        <td class="reading"><span class="answer">おぼえる</span></td>
+      </tr>
+            <tr>
+        <td>hand</td>
+        <td class="compound"><span class="answer">手</span></td>
+        <td class="reading"><span class="answer">て</span></td>
+      </tr>
+            <tr>
+        <td>older sister</td>
+        <td class="compound"><span class="answer">姉</span></td>
+        <td class="reading"><span class="answer">あね</span></td>
+      </tr>
+            <tr>
+        <td>come</td>
+        <td class="compound"><span class="answer">来る</span></td>
+        <td class="reading"><span class="answer">くる</span></td>
+      </tr>
+            <tr>
+        <td>teacher; doctor</td>
+        <td class="compound"><span class="answer">先生</span></td>
+        <td class="reading"><span class="answer">せんせい</span></td>
+      </tr>
+            <tr>
+        <td>member</td>
+        <td class="compound"><span class="answer">員</span></td>
+        <td class="reading"><span class="answer">いん</span></td>
+      </tr>
+            <tr>
+        <td>every morning</td>
+        <td class="compound"><span class="answer">毎朝</span></td>
+        <td class="reading"><span class="answer">まいあさ</span></td>
+      </tr>
+            <tr>
+        <td>become open</td>
+        <td class="compound"><span class="answer">開く</span></td>
+        <td class="reading"><span class="answer">あく</span></td>
+      </tr>
+            <tr>
+        <td>birth; life</td>
+        <td class="compound"><span class="answer">生</span></td>
+        <td class="reading"><span class="answer">せい</span></td>
+      </tr>
+            <tr>
+        <td>(hall)</td>
+        <td class="compound"><span class="answer">堂</span></td>
+        <td class="reading"><span class="answer">どう</span></td>
+      </tr>
+            <tr>
+        <td>older brother (honorific)</td>
+        <td class="compound"><span class="answer">お兄さん</span></td>
+        <td class="reading"><span class="answer">おにいさん</span></td>
+      </tr>
+            <tr>
+        <td>east</td>
+        <td class="compound"><span class="answer">東</span></td>
+        <td class="reading"><span class="answer">とう</span></td>
+      </tr>
+            <tr>
+        <td>tenth day of the month</td>
+        <td class="compound"><span class="answer">十日</span></td>
+        <td class="reading"><span class="answer">とうか</span></td>
+      </tr>
+            <tr>
+        <td>today</td>
+        <td class="compound"><span class="answer">今日</span></td>
+        <td class="reading"><span class="answer">きょう</span></td>
+      </tr>
+            <tr>
+        <td>research institute</td>
+        <td class="compound"><span class="answer">研究所</span></td>
+        <td class="reading"><span class="answer">けんきゅうじょ</span></td>
+      </tr>
+            <tr>
+        <td>meal; dining</td>
+        <td class="compound"><span class="answer">食事</span></td>
+        <td class="reading"><span class="answer">しょくじ</span></td>
+      </tr>
+            <tr>
+        <td>next year</td>
+        <td class="compound"><span class="answer">来年</span></td>
+        <td class="reading"><span class="answer">らいねん</span></td>
+      </tr>
+            <tr>
+        <td>you (familiar, male)</td>
+        <td class="compound"><span class="answer">君</span></td>
+        <td class="reading"><span class="answer">きみ</span></td>
+      </tr>
+            <tr>
+        <td>snow</td>
+        <td class="compound"><span class="answer">雪</span></td>
+        <td class="reading"><span class="answer">ゆき</span></td>
+      </tr>
+            <tr>
+        <td>teller&apos;s window, ticked window</td>
+        <td class="compound"><span class="answer">窓口</span></td>
+        <td class="reading"><span class="answer">まどぐち</span></td>
+      </tr>
+            <tr>
+        <td>adult</td>
+        <td class="compound"><span class="answer">大人</span></td>
+        <td class="reading"><span class="answer">おとな</span></td>
+      </tr>
+            <tr>
+        <td>eight</td>
+        <td class="compound"><span class="answer">八</span></td>
+        <td class="reading"><span class="answer">はち</span></td>
+      </tr>
+            <tr>
+        <td>up; top; above</td>
+        <td class="compound"><span class="answer">上</span></td>
+        <td class="reading"><span class="answer">うえ</span></td>
+      </tr>
+            <tr>
+        <td>small</td>
+        <td class="compound"><span class="answer">小さい</span></td>
+        <td class="reading"><span class="answer">ちいさい</span></td>
+      </tr>
+            <tr>
+        <td>sea; ocean</td>
+        <td class="compound"><span class="answer">海</span></td>
+        <td class="reading"><span class="answer">うみ</span></td>
+      </tr>
+            <tr>
+        <td>meet</td>
+        <td class="compound"><span class="answer">合う</span></td>
+        <td class="reading"><span class="answer">あう</span></td>
+      </tr>
+            <tr>
+        <td>person</td>
+        <td class="compound"><span class="answer">人</span></td>
+        <td class="reading"><span class="answer">ひと</span></td>
+      </tr>
+            <tr>
+        <td>use</td>
+        <td class="compound"><span class="answer">使う</span></td>
+        <td class="reading"><span class="answer">つかう</span></td>
+      </tr>
+            <tr>
+        <td>Japan</td>
+        <td class="compound"><span class="answer">日本</span></td>
+        <td class="reading"><span class="answer">にほん</span></td>
+      </tr>
+            <tr>
+        <td>understand; be comprehensible</td>
+        <td class="compound"><span class="answer">分かる</span></td>
+        <td class="reading"><span class="answer">わかる</span></td>
+      </tr>
+            <tr>
+        <td>two things</td>
+        <td class="compound"><span class="answer">二つ</span></td>
+        <td class="reading"><span class="answer">ふたつ</span></td>
+      </tr>
+            <tr>
+        <td>electricity</td>
+        <td class="compound"><span class="answer">電</span></td>
+        <td class="reading"><span class="answer">でん</span></td>
+      </tr>
+            <tr>
+        <td>far</td>
+        <td class="compound"><span class="answer">遠い</span></td>
+        <td class="reading"><span class="answer">とおい</span></td>
+      </tr>
+            <tr>
+        <td>building</td>
+        <td class="compound"><span class="answer">館</span></td>
+        <td class="reading"><span class="answer">かん</span></td>
+      </tr>
+            <tr>
+        <td>section head</td>
+        <td class="compound"><span class="answer">課長</span></td>
+        <td class="reading"><span class="answer">かちょう</span></td>
+      </tr>
+            <tr>
+        <td>girl</td>
+        <td class="compound"><span class="answer">女の子</span></td>
+        <td class="reading"><span class="answer">おんなのこ</span></td>
+      </tr>
+            <tr>
+        <td>book</td>
+        <td class="compound"><span class="answer">本</span></td>
+        <td class="reading"><span class="answer">ほん</span></td>
+      </tr>
+            <tr>
+        <td>paper</td>
+        <td class="compound"><span class="answer">紙</span></td>
+        <td class="reading"><span class="answer">かみ</span></td>
+      </tr>
+            <tr>
+        <td>buy</td>
+        <td class="compound"><span class="answer">買う</span></td>
+        <td class="reading"><span class="answer">かう</span></td>
+      </tr>
+            <tr>
+        <td>mother (honorific)</td>
+        <td class="compound"><span class="answer">お母さん</span></td>
+        <td class="reading"><span class="answer">おかあさん</span></td>
+      </tr>
+            <tr>
+        <td>(arrangement)</td>
+        <td class="compound"><span class="answer">理</span></td>
+        <td class="reading"><span class="answer">り</span></td>
+      </tr>
+            <tr>
+        <td>change, convert, substitute</td>
+        <td class="compound"><span class="answer">代わる</span></td>
+        <td class="reading"><span class="answer">かわる</span></td>
+      </tr>
+            <tr>
+        <td>clinic</td>
+        <td class="compound"><span class="answer">医院</span></td>
+        <td class="reading"><span class="answer">いいん</span></td>
+      </tr>
+            <tr>
+        <td>first day of the month</td>
+        <td class="compound"><span class="answer">一日</span></td>
+        <td class="reading"><span class="answer">ついたち</span></td>
+      </tr>
+            <tr>
+        <td>hospital</td>
+        <td class="compound"><span class="answer">病院</span></td>
+        <td class="reading"><span class="answer">びょういん</span></td>
+      </tr>
+            <tr>
+        <td>the entire country</td>
+        <td class="compound"><span class="answer">全国</span></td>
+        <td class="reading"><span class="answer">ぜんこく</span></td>
+      </tr>
+            <tr>
+        <td>know (honorific)</td>
+        <td class="compound"><span class="answer">ご存知</span></td>
+        <td class="reading"><span class="answer">ごぞんじ</span></td>
+      </tr>
+            <tr>
+        <td>foreign country</td>
+        <td class="compound"><span class="answer">外国</span></td>
+        <td class="reading"><span class="answer">がいこく</span></td>
+      </tr>
+            <tr>
+        <td>baby</td>
+        <td class="compound"><span class="answer">赤ちゃん</span></td>
+        <td class="reading"><span class="answer">あかちゃん</span></td>
+      </tr>
+            <tr>
+        <td>public (red) telephone</td>
+        <td class="compound"><span class="answer">赤電話</span></td>
+        <td class="reading"><span class="answer">あかでんわ</span></td>
+      </tr>
+            <tr>
+        <td>interval, space between</td>
+        <td class="compound"><span class="answer">間</span></td>
+        <td class="reading"><span class="answer">あいだ</span></td>
+      </tr>
+            <tr>
+        <td>half day</td>
+        <td class="compound"><span class="answer">半日</span></td>
+        <td class="reading"><span class="answer">はんにち</span></td>
+      </tr>
+            <tr>
+        <td>look at</td>
+        <td class="compound"><span class="answer">見る</span></td>
+        <td class="reading"><span class="answer">みる</span></td>
+      </tr>
+            <tr>
+        <td>change (something)</td>
+        <td class="compound"><span class="answer">代える</span></td>
+        <td class="reading"><span class="answer">かえる</span></td>
+      </tr>
+            <tr>
+        <td>Japanese-style room</td>
+        <td class="compound"><span class="answer">和室</span></td>
+        <td class="reading"><span class="answer">わしつ</span></td>
+      </tr>
+            <tr>
+        <td>cold</td>
+        <td class="compound"><span class="answer">冷たい</span></td>
+        <td class="reading"><span class="answer">つめたい</span></td>
+      </tr>
+            <tr>
+        <td>country</td>
+        <td class="compound"><span class="answer">国</span></td>
+        <td class="reading"><span class="answer">くに</span></td>
+      </tr>
+            <tr>
+        <td>take out</td>
+        <td class="compound"><span class="answer">出す</span></td>
+        <td class="reading"><span class="answer">だす</span></td>
+      </tr>
+            <tr>
+        <td>near</td>
+        <td class="compound"><span class="answer">近い</span></td>
+        <td class="reading"><span class="answer">ちかい</span></td>
+      </tr>
+            <tr>
+        <td>like</td>
+        <td class="compound"><span class="answer">好き</span></td>
+        <td class="reading"><span class="answer">すき</span></td>
+      </tr>
+            <tr>
+        <td>day after tomorrow</td>
+        <td class="compound"><span class="answer">明後日</span></td>
+        <td class="reading"><span class="answer">みょうごにち</span></td>
+      </tr>
+            <tr>
+        <td>street; way</td>
+        <td class="compound"><span class="answer">道</span></td>
+        <td class="reading"><span class="answer">みち</span></td>
+      </tr>
+            <tr>
+        <td>husband</td>
+        <td class="compound"><span class="answer">主人</span></td>
+        <td class="reading"><span class="answer">しゅじん</span></td>
+      </tr>
+            <tr>
+        <td>this side (of something)</td>
+        <td class="compound"><span class="answer">手前</span></td>
+        <td class="reading"><span class="answer">てまえ</span></td>
+      </tr>
+            <tr>
+        <td>research society</td>
+        <td class="compound"><span class="answer">研究会</span></td>
+        <td class="reading"><span class="answer">けんきゅうかい</span></td>
+      </tr>
+            <tr>
+        <td>hear</td>
+        <td class="compound"><span class="answer">聞こえる</span></td>
+        <td class="reading"><span class="answer">きこえる</span></td>
+      </tr>
+            <tr>
+        <td>four things</td>
+        <td class="compound"><span class="answer">四つ</span></td>
+        <td class="reading"><span class="answer">よっつ</span></td>
+      </tr>
+            <tr>
+        <td>(duties)</td>
+        <td class="compound"><span class="answer">務</span></td>
+        <td class="reading"><span class="answer">む</span></td>
+      </tr>
+            <tr>
+        <td>rain</td>
+        <td class="compound"><span class="answer">雨</span></td>
+        <td class="reading"><span class="answer">あめ</span></td>
+      </tr>
+            <tr>
+        <td>eye doctor</td>
+        <td class="compound"><span class="answer">目医者</span></td>
+        <td class="reading"><span class="answer">めいしゃ</span></td>
+      </tr>
+            <tr>
+        <td>(materials)</td>
+        <td class="compound"><span class="answer">料</span></td>
+        <td class="reading"><span class="answer">りょう</span></td>
+      </tr>
+            <tr>
+        <td>person (honorific)</td>
+        <td class="compound"><span class="answer">方</span></td>
+        <td class="reading"><span class="answer">かた</span></td>
+      </tr>
+            <tr>
+        <td>fried food</td>
+        <td class="compound"><span class="answer">天ぷら</span></td>
+        <td class="reading"><span class="answer">てんぷら</span></td>
+      </tr>
+            <tr>
+        <td>head</td>
+        <td class="compound"><span class="answer">頭</span></td>
+        <td class="reading"><span class="answer">あたま</span></td>
+      </tr>
+            <tr>
+        <td>water</td>
+        <td class="compound"><span class="answer">水</span></td>
+        <td class="reading"><span class="answer">すい,みず</span></td>
+      </tr>
+            <tr>
+        <td>shop</td>
+        <td class="compound"><span class="answer">店</span></td>
+        <td class="reading"><span class="answer">みせ</span></td>
+      </tr>
+            <tr>
+        <td>show</td>
+        <td class="compound"><span class="answer">見せる</span></td>
+        <td class="reading"><span class="answer">みせる</span></td>
+      </tr>
+            <tr>
+        <td>last year</td>
+        <td class="compound"><span class="answer">去年</span></td>
+        <td class="reading"><span class="answer">きょねん</span></td>
+      </tr>
+            <tr>
+        <td>years of age</td>
+        <td class="compound"><span class="answer">－才</span></td>
+        <td class="reading"><span class="answer">さい</span></td>
+      </tr>
+            <tr>
+        <td>(descendant)</td>
+        <td class="compound"><span class="answer">系</span></td>
+        <td class="reading"><span class="answer">けい</span></td>
+      </tr>
+            <tr>
+        <td>one room</td>
+        <td class="compound"><span class="answer">一部屋</span></td>
+        <td class="reading"><span class="answer">ひとへや</span></td>
+      </tr>
+            <tr>
+        <td>(numbers)</td>
+        <td class="compound"><span class="answer">数</span></td>
+        <td class="reading"><span class="answer">すう</span></td>
+      </tr>
+            <tr>
+        <td>walk</td>
+        <td class="compound"><span class="answer">歩く</span></td>
+        <td class="reading"><span class="answer">あるく</span></td>
+      </tr>
+            <tr>
+        <td>day of the week</td>
+        <td class="compound"><span class="answer">曜</span></td>
+        <td class="reading"><span class="answer">よう</span></td>
+      </tr>
+            <tr>
+        <td>room</td>
+        <td class="compound"><span class="answer">部屋</span></td>
+        <td class="reading"><span class="answer">へや</span></td>
+      </tr>
+            <tr>
+        <td>what nationality?</td>
+        <td class="compound"><span class="answer">何人</span></td>
+        <td class="reading"><span class="answer">なにじん</span></td>
+      </tr>
+            <tr>
+        <td>caretaker</td>
+        <td class="compound"><span class="answer">留守番</span></td>
+        <td class="reading"><span class="answer">るすばん</span></td>
+      </tr>
+            <tr>
+        <td>college, university</td>
+        <td class="compound"><span class="answer">大学</span></td>
+        <td class="reading"><span class="answer">だいがく</span></td>
+      </tr>
+            <tr>
+        <td>section</td>
+        <td class="compound"><span class="answer">課</span></td>
+        <td class="reading"><span class="answer">か</span></td>
+      </tr>
+            <tr>
+        <td>three things</td>
+        <td class="compound"><span class="answer">三つ</span></td>
+        <td class="reading"><span class="answer">みっつ</span></td>
+      </tr>
+            <tr>
+        <td>half year</td>
+        <td class="compound"><span class="answer">半年</span></td>
+        <td class="reading"><span class="answer">はんとし</span></td>
+      </tr>
+            <tr>
+        <td>(self)</td>
+        <td class="compound"><span class="answer">自</span></td>
+        <td class="reading"><span class="answer">じ</span></td>
+      </tr>
+            <tr>
+        <td>shopping (i.e., thing bought)</td>
+        <td class="compound"><span class="answer">買い物</span></td>
+        <td class="reading"><span class="answer">かいもの</span></td>
+      </tr>
+            <tr>
+        <td>study; learning</td>
+        <td class="compound"><span class="answer">学</span></td>
+        <td class="reading"><span class="answer">がく</span></td>
+      </tr>
+            <tr>
+        <td>five</td>
+        <td class="compound"><span class="answer">五</span></td>
+        <td class="reading"><span class="answer">ご</span></td>
+      </tr>
+            <tr>
+        <td>every night</td>
+        <td class="compound"><span class="answer">毎晩</span></td>
+        <td class="reading"><span class="answer">まいばん</span></td>
+      </tr>
+            <tr>
+        <td>letter</td>
+        <td class="compound"><span class="answer">手紙</span></td>
+        <td class="reading"><span class="answer">てがみ</span></td>
+      </tr>
+            <tr>
+        <td>station</td>
+        <td class="compound"><span class="answer">駅</span></td>
+        <td class="reading"><span class="answer">えき</span></td>
+      </tr>
+            <tr>
+        <td>close</td>
+        <td class="compound"><span class="answer">閉める</span></td>
+        <td class="reading"><span class="answer">しめる</span></td>
+      </tr>
+            <tr>
+        <td>child</td>
+        <td class="compound"><span class="answer">子</span></td>
+        <td class="reading"><span class="answer">こ</span></td>
+      </tr>
+            <tr>
+        <td>Western-style food</td>
+        <td class="compound"><span class="answer">洋食</span></td>
+        <td class="reading"><span class="answer">ようしょく</span></td>
+      </tr>
+            <tr>
+        <td>house, home</td>
+        <td class="compound"><span class="answer">家</span></td>
+        <td class="reading"><span class="answer">いえ,うち</span></td>
+      </tr>
+            <tr>
+        <td>mouth</td>
+        <td class="compound"><span class="answer">口</span></td>
+        <td class="reading"><span class="answer">くち</span></td>
+      </tr>
+            <tr>
+        <td>put in</td>
+        <td class="compound"><span class="answer">入れる</span></td>
+        <td class="reading"><span class="answer">いれる</span></td>
+      </tr>
+            <tr>
+        <td>Nagoya</td>
+        <td class="compound"><span class="answer">名古屋</span></td>
+        <td class="reading"><span class="answer">なごや</span></td>
+      </tr>
+            <tr>
+        <td>write; draw</td>
+        <td class="compound"><span class="answer">書く</span></td>
+        <td class="reading"><span class="answer">かく</span></td>
+      </tr>
+            <tr>
+        <td>dentist</td>
+        <td class="compound"><span class="answer">歯医者</span></td>
+        <td class="reading"><span class="answer">はいしゃ</span></td>
+      </tr>
+            <tr>
+        <td>morning, A.M.</td>
+        <td class="compound"><span class="answer">午前</span></td>
+        <td class="reading"><span class="answer">ごぜん</span></td>
+      </tr>
+            <tr>
+        <td>(medicine)</td>
+        <td class="compound"><span class="answer">医</span></td>
+        <td class="reading"><span class="answer">い</span></td>
+      </tr>
+            <tr>
+        <td>(polite suffix)</td>
+        <td class="compound"><span class="answer">-様</span></td>
+        <td class="reading"><span class="answer">-さま</span></td>
+      </tr>
+            <tr>
+        <td>vacation; holiday; time off</td>
+        <td class="compound"><span class="answer">休み</span></td>
+        <td class="reading"><span class="answer">やすみ</span></td>
+      </tr>
+            <tr>
+        <td>how many months?</td>
+        <td class="compound"><span class="answer">何ヶ月</span></td>
+        <td class="reading"><span class="answer">なんかげつ</span></td>
+      </tr>
+            <tr>
+        <td>free (as in liberty)</td>
+        <td class="compound"><span class="answer">自由</span></td>
+        <td class="reading"><span class="answer">じゆう</span></td>
+      </tr>
+            <tr>
+        <td>part, portion; department</td>
+        <td class="compound"><span class="answer">部</span></td>
+        <td class="reading"><span class="answer">ぶ,へ</span></td>
+      </tr>
+            <tr>
+        <td>division manager</td>
+        <td class="compound"><span class="answer">部長</span></td>
+        <td class="reading"><span class="answer">ぶちょう</span></td>
+      </tr>
+            <tr>
+        <td>(name)</td>
+        <td class="compound"><span class="answer">名</span></td>
+        <td class="reading"><span class="answer">な</span></td>
+      </tr>
+            <tr>
+        <td>four</td>
+        <td class="compound"><span class="answer">四</span></td>
+        <td class="reading"><span class="answer">し</span></td>
+      </tr>
+            <tr>
+        <td>next week</td>
+        <td class="compound"><span class="answer">来週</span></td>
+        <td class="reading"><span class="answer">らいしゅう</span></td>
+      </tr>
+            <tr>
+        <td>classroom</td>
+        <td class="compound"><span class="answer">教室</span></td>
+        <td class="reading"><span class="answer">きょうしつ</span></td>
+      </tr>
+            <tr>
+        <td>one thing</td>
+        <td class="compound"><span class="answer">一つ</span></td>
+        <td class="reading"><span class="answer">ひとつ</span></td>
+      </tr>
+            <tr>
+        <td>food</td>
+        <td class="compound"><span class="answer">食べ物</span></td>
+        <td class="reading"><span class="answer">たべもの</span></td>
+      </tr>
+            <tr>
+        <td>train</td>
+        <td class="compound"><span class="answer">電車</span></td>
+        <td class="reading"><span class="answer">でんしゃ</span></td>
+      </tr>
+            <tr>
+        <td>thousand</td>
+        <td class="compound"><span class="answer">千</span></td>
+        <td class="reading"><span class="answer">せん</span></td>
+      </tr>
+            <tr>
+        <td>cut</td>
+        <td class="compound"><span class="answer">切る</span></td>
+        <td class="reading"><span class="answer">きる</span></td>
+      </tr>
+            <tr>
+        <td>inside</td>
+        <td class="compound"><span class="answer">中</span></td>
+        <td class="reading"><span class="answer">なか</span></td>
+      </tr>
+            <tr>
+        <td>employee cafeteria</td>
+        <td class="compound"><span class="answer">社員食堂</span></td>
+        <td class="reading"><span class="answer">しゃいんしょくどう</span></td>
+      </tr>
+            <tr>
+        <td>Thursday</td>
+        <td class="compound"><span class="answer">木曜日</span></td>
+        <td class="reading"><span class="answer">もくようび</span></td>
+      </tr>
+            <tr>
+        <td>what month?</td>
+        <td class="compound"><span class="answer">何月</span></td>
+        <td class="reading"><span class="answer">なんがつ</span></td>
+      </tr>
+            <tr>
+        <td>second day of the month</td>
+        <td class="compound"><span class="answer">二日</span></td>
+        <td class="reading"><span class="answer">ふつか</span></td>
+      </tr>
+            <tr>
+        <td>drink, beverage</td>
+        <td class="compound"><span class="answer">飲み物</span></td>
+        <td class="reading"><span class="answer">のみもの</span></td>
+      </tr>
+            <tr>
+        <td>make</td>
+        <td class="compound"><span class="answer">作る</span></td>
+        <td class="reading"><span class="answer">つくる</span></td>
+      </tr>
+            <tr>
+        <td>very important</td>
+        <td class="compound"><span class="answer">大切</span></td>
+        <td class="reading"><span class="answer">たいせつ</span></td>
+      </tr>
+            <tr>
+        <td>half hour</td>
+        <td class="compound"><span class="answer">半時間</span></td>
+        <td class="reading"><span class="answer">はんじかん</span></td>
+      </tr>
+            <tr>
+        <td>oneself</td>
+        <td class="compound"><span class="answer">自分</span></td>
+        <td class="reading"><span class="answer">じぶん</span></td>
+      </tr>
+            <tr>
+        <td>return</td>
+        <td class="compound"><span class="answer">帰る</span></td>
+        <td class="reading"><span class="answer">かえる</span></td>
+      </tr>
+            <tr>
+        <td>right</td>
+        <td class="compound"><span class="answer">右</span></td>
+        <td class="reading"><span class="answer">みぎ</span></td>
+      </tr>
+            <tr>
+        <td>research</td>
+        <td class="compound"><span class="answer">研究</span></td>
+        <td class="reading"><span class="answer">けんきゅう</span></td>
+      </tr>
+            <tr>
+        <td>dining room; restaurant</td>
+        <td class="compound"><span class="answer">食堂</span></td>
+        <td class="reading"><span class="answer">しょくどう</span></td>
+      </tr>
+            <tr>
+        <td>request</td>
+        <td class="compound"><span class="answer">願う</span></td>
+        <td class="reading"><span class="answer">ねがう</span></td>
+      </tr>
+            <tr>
+        <td>five things</td>
+        <td class="compound"><span class="answer">五つ</span></td>
+        <td class="reading"><span class="answer">いつつ</span></td>
+      </tr>
+            <tr>
+        <td>florist</td>
+        <td class="compound"><span class="answer">花屋</span></td>
+        <td class="reading"><span class="answer">はなや</span></td>
+      </tr>
+            <tr>
+        <td>woods</td>
+        <td class="compound"><span class="answer">林</span></td>
+        <td class="reading"><span class="answer">はやし</span></td>
+      </tr>
+            <tr>
+        <td>man</td>
+        <td class="compound"><span class="answer">男</span></td>
+        <td class="reading"><span class="answer">おとこ</span></td>
+      </tr>
+            <tr>
+        <td>place; put</td>
+        <td class="compound"><span class="answer">置く</span></td>
+        <td class="reading"><span class="answer">おく</span></td>
+      </tr>
+            <tr>
+        <td>service industry</td>
+        <td class="compound"><span class="answer">サービス業</span></td>
+        <td class="reading"><span class="answer">サービスぎょう</span></td>
+      </tr>
+            <tr>
+        <td>exceed, go beyond</td>
+        <td class="compound"><span class="answer">過ぎる</span></td>
+        <td class="reading"><span class="answer">すぎる</span></td>
+      </tr>
+            <tr>
+        <td>(someone) gives (me)</td>
+        <td class="compound"><span class="answer">下さる</span></td>
+        <td class="reading"><span class="answer">くださる</span></td>
+      </tr>
+            <tr>
+        <td>how many rooms?</td>
+        <td class="compound"><span class="answer">いく部屋</span></td>
+        <td class="reading"><span class="answer">いくへや</span></td>
+      </tr>
+            <tr>
+        <td>which number?</td>
+        <td class="compound"><span class="answer">何番</span></td>
+        <td class="reading"><span class="answer">なんばん</span></td>
+      </tr>
+            <tr>
+        <td>numbers</td>
+        <td class="compound"><span class="answer">数字</span></td>
+        <td class="reading"><span class="answer">すうじ</span></td>
+      </tr>
+            <tr>
+        <td>map</td>
+        <td class="compound"><span class="answer">地図</span></td>
+        <td class="reading"><span class="answer">ちず</span></td>
+      </tr>
+            <tr>
+        <td>every month</td>
+        <td class="compound"><span class="answer">毎月</span></td>
+        <td class="reading"><span class="answer">まいげつ,まいつき</span></td>
+      </tr>
+            <tr>
+        <td>last month</td>
+        <td class="compound"><span class="answer">先月</span></td>
+        <td class="reading"><span class="answer">せんげつ</span></td>
+      </tr>
+            <tr>
+        <td>researcher</td>
+        <td class="compound"><span class="answer">研究者</span></td>
+        <td class="reading"><span class="answer">けんきゅうしゃ</span></td>
+      </tr>
+            <tr>
+        <td>yen</td>
+        <td class="compound"><span class="answer">円</span></td>
+        <td class="reading"><span class="answer">えん</span></td>
+      </tr>
+            <tr>
+        <td>drink, swallow</td>
+        <td class="compound"><span class="answer">飲む</span></td>
+        <td class="reading"><span class="answer">のむ</span></td>
+      </tr>
+            <tr>
+        <td>fire</td>
+        <td class="compound"><span class="answer">火事</span></td>
+        <td class="reading"><span class="answer">かじ</span></td>
+      </tr>
+            <tr>
+        <td>hot</td>
+        <td class="compound"><span class="answer">暑い</span></td>
+        <td class="reading"><span class="answer">あつい</span></td>
+      </tr>
+            <tr>
+        <td>inconvenience; disability</td>
+        <td class="compound"><span class="answer">不自由</span></td>
+        <td class="reading"><span class="answer">ふじゆう</span></td>
+      </tr>
+            <tr>
+        <td>new</td>
+        <td class="compound"><span class="answer">新しい</span></td>
+        <td class="reading"><span class="answer">あたらしい</span></td>
+      </tr>
+            <tr>
+        <td>receive [from out-group]</td>
+        <td class="compound"><span class="answer">頂く</span></td>
+        <td class="reading"><span class="answer">いただく</span></td>
+      </tr>
+            <tr>
+        <td>go</td>
+        <td class="compound"><span class="answer">行く</span></td>
+        <td class="reading"><span class="answer">いく</span></td>
+      </tr>
+            <tr>
+        <td>light, bright</td>
+        <td class="compound"><span class="answer">明</span></td>
+        <td class="reading"><span class="answer">みょう</span></td>
+      </tr>
+            <tr>
+        <td>school</td>
+        <td class="compound"><span class="answer">学校</span></td>
+        <td class="reading"><span class="answer">がっこう</span></td>
+      </tr>
+            <tr>
+        <td>long</td>
+        <td class="compound"><span class="answer">長い</span></td>
+        <td class="reading"><span class="answer">ながい</span></td>
+      </tr>
+            <tr>
+        <td>classifier for room numbers</td>
+        <td class="compound"><span class="answer">号室</span></td>
+        <td class="reading"><span class="answer">ごうしつ</span></td>
+      </tr>
+            <tr>
+        <td>younger sister</td>
+        <td class="compound"><span class="answer">妹</span></td>
+        <td class="reading"><span class="answer">いもうと</span></td>
+      </tr>
+            <tr>
+        <td>field</td>
+        <td class="compound"><span class="answer">田</span></td>
+        <td class="reading"><span class="answer">た</span></td>
+      </tr>
+            <tr>
+        <td>suffice</td>
+        <td class="compound"><span class="answer">足りる</span></td>
+        <td class="reading"><span class="answer">たりる</span></td>
+      </tr>
+            <tr>
+        <td>student</td>
+        <td class="compound"><span class="answer">学生</span></td>
+        <td class="reading"><span class="answer">がくせい</span></td>
+      </tr>
+            <tr>
+        <td>say (humble)</td>
+        <td class="compound"><span class="answer">申す</span></td>
+        <td class="reading"><span class="answer">もうす</span></td>
+      </tr>
+            <tr>
+        <td>red</td>
+        <td class="compound"><span class="answer">赤</span></td>
+        <td class="reading"><span class="answer">あか</span></td>
+      </tr>
+            <tr>
+        <td>library</td>
+        <td class="compound"><span class="answer">図書館</span></td>
+        <td class="reading"><span class="answer">としょかん</span></td>
+      </tr>
+            <tr>
+        <td>Sunday</td>
+        <td class="compound"><span class="answer">日曜日</span></td>
+        <td class="reading"><span class="answer">にちようび</span></td>
+      </tr>
+            <tr>
+        <td>[the field of] medicine</td>
+        <td class="compound"><span class="answer">医学</span></td>
+        <td class="reading"><span class="answer">いがく</span></td>
+      </tr>
+            <tr>
+        <td>unskillful</td>
+        <td class="compound"><span class="answer">下手</span></td>
+        <td class="reading"><span class="answer">へた</span></td>
+      </tr>
+            <tr>
+        <td>strong</td>
+        <td class="compound"><span class="answer">強い</span></td>
+        <td class="reading"><span class="answer">つよい</span></td>
+      </tr>
+            <tr>
+        <td>night</td>
+        <td class="compound"><span class="answer">晩</span></td>
+        <td class="reading"><span class="answer">ばん</span></td>
+      </tr>
+            <tr>
+        <td>siblings</td>
+        <td class="compound"><span class="answer">兄弟</span></td>
+        <td class="reading"><span class="answer">きょうだい</span></td>
+      </tr>
+            <tr>
+        <td>say</td>
+        <td class="compound"><span class="answer">言う</span></td>
+        <td class="reading"><span class="answer">いう</span></td>
+      </tr>
+            <tr>
+        <td>Japanese-style inn</td>
+        <td class="compound"><span class="answer">旅館</span></td>
+        <td class="reading"><span class="answer">りょかん</span></td>
+      </tr>
+            <tr>
+        <td>go out (of a house, office, etc.)</td>
+        <td class="compound"><span class="answer">外出</span></td>
+        <td class="reading"><span class="answer">がいしゅつ</span></td>
+      </tr>
+            <tr>
+        <td>electric appliance shop; electrician</td>
+        <td class="compound"><span class="answer">電気屋</span></td>
+        <td class="reading"><span class="answer">でんきや</span></td>
+      </tr>
+            <tr>
+        <td>free time</td>
+        <td class="compound"><span class="answer">自由時間</span></td>
+        <td class="reading"><span class="answer">じゆうじかん</span></td>
+      </tr>
+            <tr>
+        <td>(reason; cause)</td>
+        <td class="compound"><span class="answer">由</span></td>
+        <td class="reading"><span class="answer">ゆう</span></td>
+      </tr>
+            <tr>
+        <td>floor</td>
+        <td class="compound"><span class="answer">－階</span></td>
+        <td class="reading"><span class="answer">かい</span></td>
+      </tr>
+            <tr>
+        <td>two people</td>
+        <td class="compound"><span class="answer">二人</span></td>
+        <td class="reading"><span class="answer">ふたり</span></td>
+      </tr>
+            <tr>
+        <td>doesn&apos;t come, won&apos;t come</td>
+        <td class="compound"><span class="answer">来ない</span></td>
+        <td class="reading"><span class="answer">こない</span></td>
+      </tr>
+            <tr>
+        <td>lavatory</td>
+        <td class="compound"><span class="answer">便所</span></td>
+        <td class="reading"><span class="answer">べんじょ</span></td>
+      </tr>
+            <tr>
+        <td>please give me</td>
+        <td class="compound"><span class="answer">下さい</span></td>
+        <td class="reading"><span class="answer">ください</span></td>
+      </tr>
+            <tr>
+        <td>all, the whole thing</td>
+        <td class="compound"><span class="answer">全部</span></td>
+        <td class="reading"><span class="answer">ぜんぶ</span></td>
+      </tr>
+            <tr>
+        <td>on the early side</td>
+        <td class="compound"><span class="answer">早目</span></td>
+        <td class="reading"><span class="answer">はやめ</span></td>
+      </tr>
+            <tr>
+        <td>old</td>
+        <td class="compound"><span class="answer">古い</span></td>
+        <td class="reading"><span class="answer">ふるい</span></td>
+      </tr>
+            <tr>
+        <td>wait, wait for</td>
+        <td class="compound"><span class="answer">待つ</span></td>
+        <td class="reading"><span class="answer">まつ</span></td>
+      </tr>
+            <tr>
+        <td>restaurant</td>
+        <td class="compound"><span class="answer">料理屋</span></td>
+        <td class="reading"><span class="answer">りょうりや</span></td>
+      </tr>
+            <tr>
+        <td>three</td>
+        <td class="compound"><span class="answer">三</span></td>
+        <td class="reading"><span class="answer">さん</span></td>
+      </tr>
+            <tr>
+        <td>older sister (honorific)</td>
+        <td class="compound"><span class="answer">お姉さん</span></td>
+        <td class="reading"><span class="answer">おねえさん</span></td>
+      </tr>
+            <tr>
+        <td>number (in a series); classifier for numbers</td>
+        <td class="compound"><span class="answer">番</span></td>
+        <td class="reading"><span class="answer">ばん</span></td>
+      </tr>
+            <tr>
+        <td>left</td>
+        <td class="compound"><span class="answer">左</span></td>
+        <td class="reading"><span class="answer">ひだり</span></td>
+      </tr>
+            <tr>
+        <td>every (period of time)</td>
+        <td class="compound"><span class="answer">毎</span></td>
+        <td class="reading"><span class="answer">まい</span></td>
+      </tr>
+            <tr>
+        <td>freelancer</td>
+        <td class="compound"><span class="answer">自由業</span></td>
+        <td class="reading"><span class="answer">じゆうぎょう</span></td>
+      </tr>
+            <tr>
+        <td>tea</td>
+        <td class="compound"><span class="answer">茶</span></td>
+        <td class="reading"><span class="answer">ちゃ</span></td>
+      </tr>
+            <tr>
+        <td>company employee</td>
+        <td class="compound"><span class="answer">会社員</span></td>
+        <td class="reading"><span class="answer">かいしゃいん</span></td>
+      </tr>
+            <tr>
+        <td>think</td>
+        <td class="compound"><span class="answer">思う</span></td>
+        <td class="reading"><span class="answer">おもう</span></td>
+      </tr>
+            <tr>
+        <td>twenty years of age</td>
+        <td class="compound"><span class="answer">二十</span></td>
+        <td class="reading"><span class="answer">はたち</span></td>
+      </tr>
+            <tr>
+        <td>familiar male suffix</td>
+        <td class="compound"><span class="answer">－君</span></td>
+        <td class="reading"><span class="answer">くん</span></td>
+      </tr>
+            <tr>
+        <td>which section?</td>
+        <td class="compound"><span class="answer">何課</span></td>
+        <td class="reading"><span class="answer">なんか</span></td>
+      </tr>
+            <tr>
+        <td>(person)</td>
+        <td class="compound"><span class="answer">者</span></td>
+        <td class="reading"><span class="answer">しゃ</span></td>
+      </tr>
+            <tr>
+        <td>a business company</td>
+        <td class="compound"><span class="answer">会社</span></td>
+        <td class="reading"><span class="answer">かいしゃ</span></td>
+      </tr>
+            <tr>
+        <td>thing</td>
+        <td class="compound"><span class="answer">物</span></td>
+        <td class="reading"><span class="answer">もの</span></td>
+      </tr>
+            <tr>
+        <td>clerical/secritarial work</td>
+        <td class="compound"><span class="answer">事務</span></td>
+        <td class="reading"><span class="answer">じむ</span></td>
+      </tr>
+            <tr>
+        <td>ten</td>
+        <td class="compound"><span class="answer">十</span></td>
+        <td class="reading"><span class="answer">じゅう</span></td>
+      </tr>
+            <tr>
+        <td>doctor</td>
+        <td class="compound"><span class="answer">医師</span></td>
+        <td class="reading"><span class="answer">いし</span></td>
+      </tr>
+            <tr>
+        <td>know; think</td>
+        <td class="compound"><span class="answer">存じる</span></td>
+        <td class="reading"><span class="answer">ぞんじる</span></td>
+      </tr>
+            <tr>
+        <td>mother</td>
+        <td class="compound"><span class="answer">母</span></td>
+        <td class="reading"><span class="answer">はは</span></td>
+      </tr>
+            <tr>
+        <td>foot; leg</td>
+        <td class="compound"><span class="answer">足</span></td>
+        <td class="reading"><span class="answer">あし</span></td>
+      </tr>
+            <tr>
+        <td>high school</td>
+        <td class="compound"><span class="answer">高校</span></td>
+        <td class="reading"><span class="answer">こうこう</span></td>
+      </tr>
+            <tr>
+        <td>I (male)</td>
+        <td class="compound"><span class="answer">僕</span></td>
+        <td class="reading"><span class="answer">ぼく</span></td>
+      </tr>
+            <tr>
+        <td>year</td>
+        <td class="compound"><span class="answer">年</span></td>
+        <td class="reading"><span class="answer">とし</span></td>
+      </tr>
+            <tr>
+        <td>white</td>
+        <td class="compound"><span class="answer">白</span></td>
+        <td class="reading"><span class="answer">しろ</span></td>
+      </tr>
+            <tr>
+        <td>one hour</td>
+        <td class="compound"><span class="answer">一時間</span></td>
+        <td class="reading"><span class="answer">いちじかん</span></td>
+      </tr>
+            <tr>
+        <td>one</td>
+        <td class="compound"><span class="answer">一</span></td>
+        <td class="reading"><span class="answer">いち</span></td>
+      </tr>
+            <tr>
+        <td>this year</td>
+        <td class="compound"><span class="answer">今年</span></td>
+        <td class="reading"><span class="answer">ことし</span></td>
+      </tr>
+            <tr>
+        <td>nine things</td>
+        <td class="compound"><span class="answer">九つ</span></td>
+        <td class="reading"><span class="answer">ここのつ</span></td>
+      </tr>
+            <tr>
+        <td>front; before</td>
+        <td class="compound"><span class="answer">前</span></td>
+        <td class="reading"><span class="answer">まえ</span></td>
+      </tr>
+            <tr>
+        <td>(occupation)</td>
+        <td class="compound"><span class="answer">業</span></td>
+        <td class="reading"><span class="answer">ぎょう</span></td>
+      </tr>
+            <tr>
+        <td>(public)</td>
+        <td class="compound"><span class="answer">公</span></td>
+        <td class="reading"><span class="answer">こう</span></td>
+      </tr>
+            <tr>
+        <td>friend</td>
+        <td class="compound"><span class="answer">友だち</span></td>
+        <td class="reading"><span class="answer">ともだち</span></td>
+      </tr>
+            <tr>
+        <td>(sky)</td>
+        <td class="compound"><span class="answer">天</span></td>
+        <td class="reading"><span class="answer">てん</span></td>
+      </tr>
+            <tr>
+        <td>car</td>
+        <td class="compound"><span class="answer">車</span></td>
+        <td class="reading"><span class="answer">くるま</span></td>
+      </tr>
+            <tr>
+        <td>teacher</td>
+        <td class="compound"><span class="answer">教師</span></td>
+        <td class="reading"><span class="answer">きょうし</span></td>
+      </tr>
+            <tr>
+        <td>area in front of the station</td>
+        <td class="compound"><span class="answer">駅前</span></td>
+        <td class="reading"><span class="answer">えきまえ</span></td>
+      </tr>
+            <tr>
+        <td>library room</td>
+        <td class="compound"><span class="answer">図書室</span></td>
+        <td class="reading"><span class="answer">としょしつ</span></td>
+      </tr>
+            <tr>
+        <td>father (honorific)</td>
+        <td class="compound"><span class="answer">お父さん</span></td>
+        <td class="reading"><span class="answer">おとうさん</span></td>
+      </tr>
+            <tr>
+        <td>health</td>
+        <td class="compound"><span class="answer">元気</span></td>
+        <td class="reading"><span class="answer">げんき</span></td>
+      </tr>
+            <tr>
+        <td>moon; month</td>
+        <td class="compound"><span class="answer">月</span></td>
+        <td class="reading"><span class="answer">つき,げつ</span></td>
+      </tr>
+            <tr>
+        <td>one&apos;s own wife</td>
+        <td class="compound"><span class="answer">家内</span></td>
+        <td class="reading"><span class="answer">かない</span></td>
+      </tr>
+            <tr>
+        <td>elderly</td>
+        <td class="compound"><span class="answer">年寄り</span></td>
+        <td class="reading"><span class="answer">としより</span></td>
+      </tr>
+            <tr>
+        <td>down; bottom; below; under</td>
+        <td class="compound"><span class="answer">下</span></td>
+        <td class="reading"><span class="answer">した</span></td>
+      </tr>
+            <tr>
+        <td>arms and legs</td>
+        <td class="compound"><span class="answer">手足</span></td>
+        <td class="reading"><span class="answer">てあし</span></td>
+      </tr>
+            <tr>
+        <td>public employee</td>
+        <td class="compound"><span class="answer">公務員</span></td>
+        <td class="reading"><span class="answer">こうむいん</span></td>
+      </tr>
+            <tr>
+        <td>rice wine</td>
+        <td class="compound"><span class="answer">酒</span></td>
+        <td class="reading"><span class="answer">さけ</span></td>
+      </tr>
+            <tr>
+        <td>is bright (as in intelligent)</td>
+        <td class="compound"><span class="answer">頭がいい</span></td>
+        <td class="reading"><span class="answer">あたまがいい</span></td>
+      </tr>
+            <tr>
+        <td>out of the house, office, etc.</td>
+        <td class="compound"><span class="answer">外出中</span></td>
+        <td class="reading"><span class="answer">がいしゅつちゅう</span></td>
+      </tr>
+            <tr>
+        <td>class</td>
+        <td class="compound"><span class="answer">授業</span></td>
+        <td class="reading"><span class="answer">じゅぎょう</span></td>
+      </tr>
+            <tr>
+        <td>one person</td>
+        <td class="compound"><span class="answer">一人</span></td>
+        <td class="reading"><span class="answer">ひとり</span></td>
+      </tr>
+            <tr>
+        <td>sickness</td>
+        <td class="compound"><span class="answer">病気</span></td>
+        <td class="reading"><span class="answer">びょうき</span></td>
+      </tr>
+            <tr>
+        <td>stop in</td>
+        <td class="compound"><span class="answer">寄る</span></td>
+        <td class="reading"><span class="answer">よる</span></td>
+      </tr>
+            <tr>
+        <td>uncooked rice</td>
+        <td class="compound"><span class="answer">米</span></td>
+        <td class="reading"><span class="answer">こめ</span></td>
+      </tr>
+            <tr>
+        <td>business, matter to attend to</td>
+        <td class="compound"><span class="answer">用事</span></td>
+        <td class="reading"><span class="answer">ようじ</span></td>
+      </tr>
+            <tr>
+        <td>noon</td>
+        <td class="compound"><span class="answer">午</span></td>
+        <td class="reading"><span class="answer">ご</span></td>
+      </tr>
+            <tr>
+        <td>go; come (humble)</td>
+        <td class="compound"><span class="answer">参る</span></td>
+        <td class="reading"><span class="answer">まいる</span></td>
+      </tr>
+            <tr>
+        <td>company president</td>
+        <td class="compound"><span class="answer">社長</span></td>
+        <td class="reading"><span class="answer">しゃちょう</span></td>
+      </tr>
+            <tr>
+        <td>came</td>
+        <td class="compound"><span class="answer">来た</span></td>
+        <td class="reading"><span class="answer">きた</span></td>
+      </tr>
+            <tr>
+        <td>become distressed, annoyed, troubled</td>
+        <td class="compound"><span class="answer">困る</span></td>
+        <td class="reading"><span class="answer">こまる</span></td>
+      </tr>
+            <tr>
+        <td>liquor store</td>
+        <td class="compound"><span class="answer">酒屋</span></td>
+        <td class="reading"><span class="answer">さかや</span></td>
+      </tr>
+            <tr>
+        <td>Kyoto</td>
+        <td class="compound"><span class="answer">京都</span></td>
+        <td class="reading"><span class="answer">きょうと</span></td>
+      </tr>
+            <tr>
+        <td>extinguish</td>
+        <td class="compound"><span class="answer">消す</span></td>
+        <td class="reading"><span class="answer">けす</span></td>
+      </tr>
+            <tr>
+        <td>open</td>
+        <td class="compound"><span class="answer">開ける</span></td>
+        <td class="reading"><span class="answer">あける</span></td>
+      </tr>
+            <tr>
+        <td>flower</td>
+        <td class="compound"><span class="answer">花</span></td>
+        <td class="reading"><span class="answer">はな</span></td>
+      </tr>
+            <tr>
+        <td>ten things</td>
+        <td class="compound"><span class="answer">十</span></td>
+        <td class="reading"><span class="answer">とう</span></td>
+      </tr>
+            <tr>
+        <td>become extinguished</td>
+        <td class="compound"><span class="answer">消える</span></td>
+        <td class="reading"><span class="answer">きえる</span></td>
+      </tr>
+            <tr>
+        <td>later</td>
+        <td class="compound"><span class="answer">後ほど</span></td>
+        <td class="reading"><span class="answer">のちほど</span></td>
+      </tr>
+            <tr>
+        <td>number</td>
+        <td class="compound"><span class="answer">号</span></td>
+        <td class="reading"><span class="answer">ごう</span></td>
+      </tr>
+            <tr>
+        <td>electricity; light</td>
+        <td class="compound"><span class="answer">電気</span></td>
+        <td class="reading"><span class="answer">でんき</span></td>
+      </tr>
+            <tr>
+        <td>Japanese-style food</td>
+        <td class="compound"><span class="answer">和食</span></td>
+        <td class="reading"><span class="answer">わしょく</span></td>
+      </tr>
+            <tr>
+        <td>foreign section</td>
+        <td class="compound"><span class="answer">外国課</span></td>
+        <td class="reading"><span class="answer">がいこくか</span></td>
+      </tr>
+            <tr>
+        <td>(chief)</td>
+        <td class="compound"><span class="answer">主</span></td>
+        <td class="reading"><span class="answer">しゅ</span></td>
+      </tr>
+            <tr>
+        <td>minutes</td>
+        <td class="compound"><span class="answer">分</span></td>
+        <td class="reading"><span class="answer">ふん</span></td>
+      </tr>
+            <tr>
+        <td>medical doctor</td>
+        <td class="compound"><span class="answer">医者</span></td>
+        <td class="reading"><span class="answer">いしゃ</span></td>
+      </tr>
+            <tr>
+        <td>past</td>
+        <td class="compound"><span class="answer">-過ぎ</span></td>
+        <td class="reading"><span class="answer">-すぎ</span></td>
+      </tr>
+            <tr>
+        <td>basement</td>
+        <td class="compound"><span class="answer">地下</span></td>
+        <td class="reading"><span class="answer">ちか</span></td>
+      </tr>
+            <tr>
+        <td>big</td>
+        <td class="compound"><span class="answer">大きい</span></td>
+        <td class="reading"><span class="answer">おおきい</span></td>
+      </tr>
+            <tr>
+        <td>gold; metal</td>
+        <td class="compound"><span class="answer">金</span></td>
+        <td class="reading"><span class="answer">きん</span></td>
+      </tr>
+            <tr>
+        <td>professor</td>
+        <td class="compound"><span class="answer">教授</span></td>
+        <td class="reading"><span class="answer">きょうじゅ</span></td>
+      </tr>
+            <tr>
+        <td>neighborhood</td>
+        <td class="compound"><span class="answer">近所</span></td>
+        <td class="reading"><span class="answer">こんじょ</span></td>
+      </tr>
+            <tr>
+        <td>lead</td>
+        <td class="compound"><span class="answer">連れる</span></td>
+        <td class="reading"><span class="answer">つれる</span></td>
+      </tr>
+            <tr>
+        <td>early</td>
+        <td class="compound"><span class="answer">早い</span></td>
+        <td class="reading"><span class="answer">はやい</span></td>
+      </tr>
+            <tr>
+        <td>tomorrow</td>
+        <td class="compound"><span class="answer">明日</span></td>
+        <td class="reading"><span class="answer">あした</span></td>
+      </tr>
+            <tr>
+        <td>public school teacher</td>
+        <td class="compound"><span class="answer">教員</span></td>
+        <td class="reading"><span class="answer">きょういん</span></td>
+      </tr>
+            <tr>
+        <td>Friday</td>
+        <td class="compound"><span class="answer">金曜日</span></td>
+        <td class="reading"><span class="answer">きんようび</span></td>
+      </tr>
+            <tr>
+        <td>woman</td>
+        <td class="compound"><span class="answer">女</span></td>
+        <td class="reading"><span class="answer">おんな</span></td>
+      </tr>
+            <tr>
+        <td>telephone number</td>
+        <td class="compound"><span class="answer">電話番号</span></td>
+        <td class="reading"><span class="answer">でんわばんごう</span></td>
+      </tr>
+            <tr>
+        <td>one day</td>
+        <td class="compound"><span class="answer">一日</span></td>
+        <td class="reading"><span class="answer">いちにち</span></td>
+      </tr>
+            <tr>
+        <td>three people</td>
+        <td class="compound"><span class="answer">三人</span></td>
+        <td class="reading"><span class="answer">さんにん</span></td>
+      </tr>
+            <tr>
+        <td>afternoon, P.M.</td>
+        <td class="compound"><span class="answer">午後</span></td>
+        <td class="reading"><span class="answer">ごご</span></td>
+      </tr>
+            <tr>
+        <td>inside, within</td>
+        <td class="compound"><span class="answer">内</span></td>
+        <td class="reading"><span class="answer">うち</span></td>
+      </tr>
+            <tr>
+        <td>study</td>
+        <td class="compound"><span class="answer">勉強</span></td>
+        <td class="reading"><span class="answer">べんきょう</span></td>
+      </tr>
+            <tr>
+        <td>outside</td>
+        <td class="compound"><span class="answer">外</span></td>
+        <td class="reading"><span class="answer">そと</span></td>
+      </tr>
+            <tr>
+        <td>how many people?</td>
+        <td class="compound"><span class="answer">何人</span></td>
+        <td class="reading"><span class="answer">なんにん</span></td>
+      </tr>
+            <tr>
+        <td>every year</td>
+        <td class="compound"><span class="answer">毎年</span></td>
+        <td class="reading"><span class="answer">まいとし,まいねん</span></td>
+      </tr>
+            <tr>
+        <td>(entire)</td>
+        <td class="compound"><span class="answer">全</span></td>
+        <td class="reading"><span class="answer">ぜん</span></td>
+      </tr>
+            <tr>
+        <td>eight things</td>
+        <td class="compound"><span class="answer">八つ</span></td>
+        <td class="reading"><span class="answer">やっつ</span></td>
+      </tr>
+            <tr>
+        <td>tooth brush</td>
+        <td class="compound"><span class="answer">歯ブラシ</span></td>
+        <td class="reading"><span class="answer">はブラシ</span></td>
+      </tr>
+            <tr>
+        <td>six</td>
+        <td class="compound"><span class="answer">六</span></td>
+        <td class="reading"><span class="answer">ろく</span></td>
+      </tr>
+            <tr>
+        <td>place</td>
+        <td class="compound"><span class="answer">所</span></td>
+        <td class="reading"><span class="answer">ところ,しょ</span></td>
+      </tr>
+            <tr>
+        <td>telephone</td>
+        <td class="compound"><span class="answer">電話</span></td>
+        <td class="reading"><span class="answer">でんわ</span></td>
+      </tr>
+            <tr>
+        <td>last week</td>
+        <td class="compound"><span class="answer">先週</span></td>
+        <td class="reading"><span class="answer">せんしゅう</span></td>
+      </tr>
+            <tr>
+        <td>one week</td>
+        <td class="compound"><span class="answer">一週間</span></td>
+        <td class="reading"><span class="answer">いっしゅうかん</span></td>
+      </tr>
+            <tr>
+        <td>Saturday</td>
+        <td class="compound"><span class="answer">土曜日</span></td>
+        <td class="reading"><span class="answer">どようび</span></td>
+      </tr>
+            <tr>
+        <td>upper; top grade</td>
+        <td class="compound"><span class="answer">上</span></td>
+        <td class="reading"><span class="answer">じょう</span></td>
+      </tr>
+            <tr>
+        <td>earth, soil</td>
+        <td class="compound"><span class="answer">土</span></td>
+        <td class="reading"><span class="answer">ど</span></td>
+      </tr>
+            <tr>
+        <td>every day</td>
+        <td class="compound"><span class="answer">毎日</span></td>
+        <td class="reading"><span class="answer">まいにち</span></td>
+      </tr>
+            <tr>
+        <td>Tokyo</td>
+        <td class="compound"><span class="answer">東京</span></td>
+        <td class="reading"><span class="answer">とうきょう</span></td>
+      </tr>
+            <tr>
+        <td>talk</td>
+        <td class="compound"><span class="answer">話す</span></td>
+        <td class="reading"><span class="answer">はなす</span></td>
+      </tr>
+            <tr>
+        <td>same</td>
+        <td class="compound"><span class="answer">同じ</span></td>
+        <td class="reading"><span class="answer">おなじ</span></td>
+      </tr>
+            <tr>
+        <td>hundred</td>
+        <td class="compound"><span class="answer">百</span></td>
+        <td class="reading"><span class="answer">ひゃく</span></td>
+      </tr>
+            <tr>
+        <td>capital</td>
+        <td class="compound"><span class="answer">京</span></td>
+        <td class="reading"><span class="answer">きょう</span></td>
+      </tr>
+            <tr>
+        <td>a company</td>
+        <td class="compound"><span class="answer">社</span></td>
+        <td class="reading"><span class="answer">しゃ</span></td>
+      </tr>
+            <tr>
+        <td>father</td>
+        <td class="compound"><span class="answer">父</span></td>
+        <td class="reading"><span class="answer">ちち</span></td>
+      </tr>
+            <tr>
+        <td>day</td>
+        <td class="compound"><span class="answer">日</span></td>
+        <td class="reading"><span class="answer">にち,か</span></td>
+      </tr>
+            <tr>
+        <td>voice</td>
+        <td class="compound"><span class="answer">声</span></td>
+        <td class="reading"><span class="answer">こえ</span></td>
+      </tr>
+            <tr>
+        <td>garden</td>
+        <td class="compound"><span class="answer">園</span></td>
+        <td class="reading"><span class="answer">えん</span></td>
+      </tr>
+            <tr>
+        <td>Ueno Park (in Ueno, in Tokyo)</td>
+        <td class="compound"><span class="answer">上野公園</span></td>
+        <td class="reading"><span class="answer">うえのこうえん</span></td>
+      </tr>
+            <tr>
+        <td>(give; grant)</td>
+        <td class="compound"><span class="answer">授</span></td>
+        <td class="reading"><span class="answer">じゅ</span></td>
+      </tr>
+            <tr>
+        <td>become decided</td>
+        <td class="compound"><span class="answer">決まる</span></td>
+        <td class="reading"><span class="answer">きまる</span></td>
+      </tr>
+            <tr>
+        <td>boy</td>
+        <td class="compound"><span class="answer">男の子</span></td>
+        <td class="reading"><span class="answer">おとこのこ</span></td>
+      </tr>
+            <tr>
+        <td>important</td>
+        <td class="compound"><span class="answer">大事</span></td>
+        <td class="reading"><span class="answer">だいじ</span></td>
+      </tr>
+            <tr>
+        <td>absence, being away from home</td>
+        <td class="compound"><span class="answer">留守</span></td>
+        <td class="reading"><span class="answer">るす</span></td>
+      </tr>
+            <tr>
+        <td>read</td>
+        <td class="compound"><span class="answer">読む</span></td>
+        <td class="reading"><span class="answer">よむ</span></td>
+      </tr>
+            <tr>
+        <td>direction; alternative</td>
+        <td class="compound"><span class="answer">方</span></td>
+        <td class="reading"><span class="answer">ほう</span></td>
+      </tr>
+            <tr>
+        <td>next</td>
+        <td class="compound"><span class="answer">次</span></td>
+        <td class="reading"><span class="answer">つぎ</span></td>
+      </tr>
+            <tr>
+        <td>know</td>
+        <td class="compound"><span class="answer">知る</span></td>
+        <td class="reading"><span class="answer">しる</span></td>
+      </tr>
+            <tr>
+        <td>Wednesday</td>
+        <td class="compound"><span class="answer">水曜日</span></td>
+        <td class="reading"><span class="answer">すいようび</span></td>
+      </tr>
+            <tr>
+        <td>office</td>
+        <td class="compound"><span class="answer">事務所</span></td>
+        <td class="reading"><span class="answer">じむしょ</span></td>
+      </tr>
+            <tr>
+        <td>become closed</td>
+        <td class="compound"><span class="answer">閉まる</span></td>
+        <td class="reading"><span class="answer">しまる</span></td>
+      </tr>
+            <tr>
+        <td>real</td>
+        <td class="compound"><span class="answer">実</span></td>
+        <td class="reading"><span class="answer">じつ</span></td>
+      </tr>
+            <tr>
+        <td>color</td>
+        <td class="compound"><span class="answer">色</span></td>
+        <td class="reading"><span class="answer">いろ</span></td>
+      </tr>
+            <tr>
+        <td>writer, novelist</td>
+        <td class="compound"><span class="answer">作家</span></td>
+        <td class="reading"><span class="answer">さっか</span></td>
+      </tr>
+            <tr>
+        <td>(study)</td>
+        <td class="compound"><span class="answer">研</span></td>
+        <td class="reading"><span class="answer">けん</span></td>
+      </tr>
+            <tr>
+        <td>lend</td>
+        <td class="compound"><span class="answer">貸す</span></td>
+        <td class="reading"><span class="answer">かす</span></td>
+      </tr>
+            <tr>
+        <td>ahead</td>
+        <td class="compound"><span class="answer">先</span></td>
+        <td class="reading"><span class="answer">さき</span></td>
+      </tr>
+            <tr>
+        <td>January</td>
+        <td class="compound"><span class="answer">一月</span></td>
+        <td class="reading"><span class="answer">いちがつ</span></td>
+      </tr>
+            <tr>
+        <td>exit</td>
+        <td class="compound"><span class="answer">出口</span></td>
+        <td class="reading"><span class="answer">でぐち</span></td>
+      </tr>
+      
+    </table>
+  </body>
+</html>
